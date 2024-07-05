@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Update"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Form fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/teal_200"
+        android:layout_marginTop="16dp">
+
+        <!-- Nama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nama"
+                android:textSize="18sp"
+                android:textColor="#333" />
+
+            <EditText
+                android:id="@+id/txtnama"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_rounded"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Harga -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Harga"
+                android:textSize="18sp"
+                android:textColor="#333" />
+
+            <EditText
+                android:id="@+id/txtharga"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_rounded"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Gambar Url -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gambar Url"
+                android:textSize="18sp"
+                android:textColor="#333" />
+
+            <EditText
+                android:id="@+id/txtgambarurl"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_rounded"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Deskripsi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Deskripsi"
+                android:textSize="18sp"
+                android:textColor="#333" />
+
+            <EditText
+                android:id="@+id/txtdeskripsi"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_rounded"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="21dp" />
+
+</LinearLayout>

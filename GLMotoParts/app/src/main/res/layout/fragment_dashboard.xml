@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@color/light_gray">
+
+
+        </LinearLayout>
+
+        <!-- Sale Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@color/red">
+
+            <TextView
+                android:id="@+id/tv_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GL Moto Parts"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Product List -->
+
+        <!-- Horizontal ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Product 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+
+                        android:id="@+id/iv_product1_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/bangbrang"
+                        android:clickable="true"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_product1_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GL-100 125"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product1_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="94dp"
+                            android:ellipsize="end"
+                            android:text="Saat pertama mengaspal, Honda GL100 dan GL125 dibekali mesin yang mirip dengan CB100 dan CB125 loh. Bukan hanya mesinnya saja yang mirip, namun panel indikator GL100 dan GL125 juga mirip loh. Sayangnya saat memasuki tahun 1982, Honda GL125 kurang diminati konsumen tidak seperti GL100. Tetapi pada tahun yang sama, GL100 justru mendapat pembaruan dan memiliki nama Honda GL100 CDI. Bahkan beberapa spare part yang melekat pada GL100 CDI juga mendapat pembaruan agar tampilanya beda."
+                            android:textColor="@color/teal_700"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Product 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_product2_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/glmax125"
+                        android:clickable="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_product2_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GL-Max 125"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product2_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="112dp"
+                            android:ellipsize="end"
+                            android:text="Seiring berjalannya waktu, Honda kembali meluncurkan GL bermesin 125 cc dengan nama Honda GL Max pada tahun 1985, Penerus GL125 ini mulai diminati konsumen hingga membuat pabrikan meluncurkan beberapa varian lain, yakni GL Max CDI dan GL Max Neotech 125. Honda GL Max Neotech 125 terus beredar dan dijual di Indonesia hingga 2005."
+                            android:textColor="@color/teal_700"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Product 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_product3_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/glpro"
+                        android:clickable="true"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_product3_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GL-Pro BE "
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product3_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="112dp"
+                            android:ellipsize="end"
+                            android:text="GL Max tidak sendiri sob, ia mengaspal bersama Honda GL Pro yang memiliki mesin 145 cc di tahun yang sama. Meski Honda memiliki dua 'jagoan' GL generasi terbaru, namun GL100 tetap diproduksi hingga 1990-an. Honda GL Pro yang memiliki mesin lebih besar pun terus diproduksi oleh pabrikan hingga tahun 1991. Meski motor ini cukup diminati masyarakat, Honda GL Pro Neotech harus berhenti produksi pada tahun 1999. Kalau melihat garis desainnya, Honda GL series mungkin sudah terbilang berakhir di GL Pro Neotech"
+                            android:textColor="@color/teal_700"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Product 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_product4_image"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/megapro"
+                        android:clickable="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_product4_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MegaPro "
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product4_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="112dp"
+                            android:ellipsize="end"
+                            android:text="Honda Megapro pertama kali diproduksi pada tahun 1999 sebagai suksesor langsung dari GL Pro Neotech. Motor ini masih mengusung mesin berteknologi karburator dengan kapasitas 160cc. Orang biasa menyebut nya Megapro Neotech atau Megapro engkel karena tidak terdapat double starter."
+                            android:textColor="@color/teal_700"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Product 5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_product5_image"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/tigerpul"
+                        android:clickable="true"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_product5_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tiger-2000 "
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product5_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="112dp"
+                            android:ellipsize="end"
+                            android:text=" Kemudian lanjut deh ke seri GL yang termasuk banyak peminatnya, ini nih sejarah Honda Tiger alias GL200. Honda Tiger pertama yang hadir di Indonesia adalah Tiger 2000, yang lahir tahun 1993 dengan kode produksi GL-200. Di eranya, Tiger 2000 cukup jadi perhatian bikers karena kapasitas mesin yang besar untuk ukuran motor sport kala itu, yakni 200 cc. Tiger 2000 generasi pertama hadir dalam lima pilihan warna di antaranya merah marun, hijau tua, biru keunguan, serta satu warna edisi spesial yakni kuning. Setelahnya warna warna silver, hitam dan merah ikut dirilis di tahun 1996. Ciri utama Tiger 2000 generasi pertama ini adalah tulisan Tiger 2000 yang masih menggunakan stiker, serta behel belakang terpisah di kiri dan kanan buritannya. Di tahun 1997, Tiger 2000 mendapat sedikt penyegaran tampilan, diantaranya dengan tulisan Tiger 2000 yang berganti dari stiker menjadi emblem."
+                            android:textColor="@color/teal_700"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <!-- Sale Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@color/red">
+
+            <TextView
+                android:id="@+id/tv_sale2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sparepart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- Add your horizontal content here -->
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/baut"
+                    android:contentDescription="INI MESIN"/>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/blokhead"
+                    android:contentDescription="INI MESIN"/>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/perklep"
+                    android:contentDescription="INI MESIN"/>
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/noken"
+                    android:contentDescription="INI MESIN"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

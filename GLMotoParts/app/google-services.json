@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "938520515283",
+    "firebase_url": "https://gl-motoparts-default-rtdb.firebaseio.com",
+    "project_id": "gl-motoparts",
+    "storage_bucket": "gl-motoparts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938520515283:android:4c2ca68f9c0b169e287a26",
+        "android_client_info": {
+          "package_name": "com.example.glmotoparts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtSwwrYQD85kLVkwdWsGcEbmRI4Ihp2Z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
